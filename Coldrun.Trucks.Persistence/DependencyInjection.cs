@@ -1,10 +1,10 @@
 ﻿using Coldrun.Trucks.Application.Abstractions.DatabaseContext;
 using Coldrun.Trucks.Application.UnitOfWork;
 using Coldrun.Trucks.Domain.Entities.Trucks;
+using Coldrun.Trucks.Persistence;
 using Coldrun.Trucks.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Microsoft.Extensions.DependencyInjection;
 

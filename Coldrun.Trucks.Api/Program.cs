@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using Coldrun.Trucks.Api.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -8,7 +8,7 @@ using Coldrun.Trucks.Domain.Entities.Trucks;
 using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 
-namespace Microsoft.AspNetCore.Builder;
+namespace Coldrun.Trucks.Api.Controllers;
 
 public static class TruckEndpoints
 {
@@ -39,7 +39,7 @@ public static class TruckEndpoints
             return TypedResults.NotFound(e.Message);
         }
     }
-    
+
     internal static async Task<Ok<List<GetTruckResponse>>> GetFilteredTrucks(
         string? textSearchTerm,
         TruckStatus? truckStatusSearchTerm,
