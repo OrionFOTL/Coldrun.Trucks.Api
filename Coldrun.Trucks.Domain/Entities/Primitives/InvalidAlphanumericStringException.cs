@@ -1,10 +1,4 @@
 ﻿namespace Coldrun.Trucks.Domain.Entities.Primitives;
 
-[Serializable]
-internal class InvalidAlphanumericStringException : Exception
-{
-    public InvalidAlphanumericStringException(string inputString)
-        : base($"The input string '{inputString}' was not alphanumeric")
-    {
-    }
-}
+internal class InvalidAlphanumericStringException(string inputString)
+    : Exception($"The input string '{inputString}' was not alphanumeric");

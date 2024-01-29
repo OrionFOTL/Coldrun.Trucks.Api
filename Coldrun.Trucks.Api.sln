@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coldrun.Trucks.Api", "Coldrun.Trucks.Api\Coldrun.Trucks.Api.csproj", "{F7EE5BBB-A9FA-4A87-937E-0FACA12F2BF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coldrun.Trucks.Api", "Coldrun.Trucks.Api\Coldrun.Trucks.Api.csproj", "{F7EE5BBB-A9FA-4A87-937E-0FACA12F2BF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coldrun.Trucks.Domain", "Coldrun.Trucks.Domain\Coldrun.Trucks.Domain.csproj", "{C8733B8D-5430-4D3E-A005-CB54F633282E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coldrun.Trucks.Domain", "Coldrun.Trucks.Domain\Coldrun.Trucks.Domain.csproj", "{C8733B8D-5430-4D3E-A005-CB54F633282E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coldrun.Trucks.Application", "Coldrun.Trucks.Application\Coldrun.Trucks.Application.csproj", "{A32CFC8E-47FB-42CB-B77F-0EBFB0E45DE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coldrun.Trucks.Persistence", "Coldrun.Trucks.Persistence\Coldrun.Trucks.Persistence.csproj", "{4224BA8B-CBD6-4761-8CC9-576C55FFF16A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coldrun.Trucks.Tests", "Coldrun.Trucks.Tests\Coldrun.Trucks.Tests.csproj", "{B951ED87-7CB4-46D9-9E9D-949B686EE158}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{C8733B8D-5430-4D3E-A005-CB54F633282E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8733B8D-5430-4D3E-A005-CB54F633282E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8733B8D-5430-4D3E-A005-CB54F633282E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A32CFC8E-47FB-42CB-B77F-0EBFB0E45DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A32CFC8E-47FB-42CB-B77F-0EBFB0E45DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A32CFC8E-47FB-42CB-B77F-0EBFB0E45DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A32CFC8E-47FB-42CB-B77F-0EBFB0E45DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4224BA8B-CBD6-4761-8CC9-576C55FFF16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4224BA8B-CBD6-4761-8CC9-576C55FFF16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4224BA8B-CBD6-4761-8CC9-576C55FFF16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4224BA8B-CBD6-4761-8CC9-576C55FFF16A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B951ED87-7CB4-46D9-9E9D-949B686EE158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B951ED87-7CB4-46D9-9E9D-949B686EE158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B951ED87-7CB4-46D9-9E9D-949B686EE158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B951ED87-7CB4-46D9-9E9D-949B686EE158}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

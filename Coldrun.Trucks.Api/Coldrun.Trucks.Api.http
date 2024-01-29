@@ -1,6 +1,43 @@
-@Coldrun.Trucks.Api_HostAddress = http://localhost:5103
+@Coldrun.Trucks.Api_HostAddress = https://localhost:7224
 
-GET {{Coldrun.Trucks.Api_HostAddress}}/weatherforecast/
-Accept: application/json
+GET {{Coldrun.Trucks.Api_HostAddress}}/trucks/
+
+###
+
+POST {{Coldrun.Trucks.Api_HostAddress}}/trucks/
+Content-Type: application/json
+
+{
+  "code": "T004",
+  "name": "Truck 4",
+  "description": "quite powerful"
+}
+
+###
+
+GET {{Coldrun.Trucks.Api_HostAddress}}/trucks/7cd67a69-6fb6-40d8-9fab-801ef2522cda
+
+###
+
+PUT {{Coldrun.Trucks.Api_HostAddress}}/trucks/7cd67a69-6fb6-40d8-9fab-801ef2522cda
+Content-Type: application/json
+
+{
+  "name": "Truck no. 2",
+  "description": "mediocre"
+}
+
+###
+
+POST {{Coldrun.Trucks.Api_HostAddress}}/trucks/7cd67a69-6fb6-40d8-9fab-801ef2522cda/status
+Content-Type: application/json
+
+{
+  "truckStateTrigger": "StartLoading"
+}
+
+###
+
+DELETE {{Coldrun.Trucks.Api_HostAddress}}/trucks/7cd67a69-6fb6-40d8-9fab-801ef2522cda
 
 ###

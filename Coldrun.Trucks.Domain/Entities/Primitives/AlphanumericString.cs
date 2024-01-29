@@ -13,8 +13,12 @@ public record AlphanumericString
             throw new InvalidAlphanumericStringException(inputString);
         }
 
-        AlphanumericString = inputString;
+        Value = inputString;
     }
 
-    public string AlphanumericString { get; private set; }
+    public string Value { get; private set; }
+
+    public override string ToString() => Value;
+
+    public static explicit operator string(AlphanumericString inputString) => inputString.Value;
 }
